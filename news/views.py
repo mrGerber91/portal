@@ -17,8 +17,6 @@ from .forms import PostForm
 from .exceptions import DailyPostLimitExceeded
 from .mixins import AuthCheckMixin
 
-
-
 def daily_post_limit_exceeded(request, exception=None):
     return render(request, 'errors/403_2.html', status=403)
 

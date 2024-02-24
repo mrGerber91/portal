@@ -13,7 +13,6 @@ from django.template.loader import render_to_string
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 
-
 class BaseRegisterView(CreateView):
     model = User
     form_class = BaseRegisterForm

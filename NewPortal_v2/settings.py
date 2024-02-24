@@ -133,6 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/accounts/login/'
 
+
 load_dotenv()
 
 ACCOUNT_EMAIL_REQUIRED = True
