@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 import boto3
 from botocore.client import Config
+from uuid import uuid4
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -123,8 +124,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS = ['http://mrGerber91-portal-527a.twc1.net']
-CORS_ALLOWED_ORIGINS = ['http://mrGerber91-portal-527a.twc1.net']
+CSRF_TRUSTED_ORIGINS = ['http://mrGerber91-portal-527a.twc1.net', 'https://mrGerber91-portal-527a.twc1.net']
+CORS_ALLOWED_ORIGINS = ['http://mrGerber91-portal-527a.twc1.net', 'https://mrGerber91-portal-527a.twc1.net']
 
 SITE_ID = 1
 
